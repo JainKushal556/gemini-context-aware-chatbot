@@ -148,7 +148,7 @@ async function sendMessage() {
 async function checkBackendStatus() {
     try {
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 2000); // 2 sec timeout
+        const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 sec timeout
 
         const res = await fetch(URL_HEALTH, {
             method: "GET",
@@ -187,6 +187,6 @@ userInput.addEventListener("keydown", function (e) {
 window.addEventListener("load", function () {
     addMessage("Hi! I'm Kimi, Kushal's chatbot. How can I help you today?", "bot");
     checkBackendStatus();
-    setInterval(checkBackendStatus, 5000); // Check every 5 seconds
+    setInterval(checkBackendStatus, 30000); // Check every 30 seconds
 });
 
