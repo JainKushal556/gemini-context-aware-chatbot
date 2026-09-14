@@ -4,9 +4,9 @@ const sendButton = document.getElementById("send-button");
 const botStatus  = document.getElementById("bot-status");
 
 // ─── Backend URL Constants ─────────────────────────────────────────────────────
-const URL_STATEFUL   = "http://localhost:8000/stateful_ai";   // AI with memory
-const URL_STATELESS  = "http://localhost:8000/stateless_ai";  // AI without memory
-const URL_HEALTH     = "http://localhost:8000/health";        // Health check
+const URL_STATEFUL   = "https://gemini-context-aware-chatbot.onrender.com/stateful_ai";   // AI with memory
+const URL_STATELESS  = "https://gemini-context-aware-chatbot.onrender.com/stateless_ai";  // AI without memory
+const URL_HEALTH     = "https://gemini-context-aware-chatbot.onrender.com/health";        // Health check
 
 let session_id = null
 // Tracks which mode is currently selected ("stateful" or "stateless")
